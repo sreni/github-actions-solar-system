@@ -12,9 +12,7 @@ on:
       - 'feature/*'
     
 jobs:
-    unit-testing:
-        env:
-          
+    unit-testing:   
         name: Unit Testing
         runs-on: ubuntu-latest
         steps:
