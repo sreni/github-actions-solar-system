@@ -15,8 +15,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '/')));
 app.use(cors())
 
-mongoose.connect(process.env.`mongodb+srv://supercluster.d83jj.mongodb.net/superData`, {
-    user: process.env.superuser,
+mongoose.connect(process.env.MONGO_URI, {
+    user: process.env.MONGO_USERNAME,
     pass: process.env.MONGO_PASSWORD,
     useNewUrlParser: true,
     useUnifiedTopology: true
